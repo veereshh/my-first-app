@@ -1,11 +1,11 @@
 pipeline {
-    agent { label 'vagrant' }
+    agent any
 
     stages {
         stage('Hello') {
             steps {
-                sh "echo hello"
+                echo 'Hello World'
             }
         }
     }
-}i
+}
